@@ -2,8 +2,8 @@
 
     var HTML =
         [
-            '<div class="flour-plan">',
-                '<div class="flour-plan-img"></div>',
+            '<div class="floor-plan">',
+                '<div class="floor-plan-img"></div>',
                 '<div class="points"></div>',
             '</div>'
         ].join('');
@@ -31,7 +31,7 @@
             data = data || [];
 
             var self = this;
-            var points = d3.select(this.$el.find('.flour-plan-img')[0])
+            var points = d3.select(this.$el.find('.floor-plan-img')[0])
                 .selectAll('div').data(data, function (item) {
                     return item.id
                 });
@@ -82,7 +82,7 @@
             var domainY = this.img.height;
             var $img = $(this.img);
 
-            this.$el.find('.flour-plan-img').append(this.img);
+            this.$el.find('.floor-plan-img').append(this.img);
 
             // get rendered img size
             var rangeX = $img.width();
